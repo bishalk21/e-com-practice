@@ -98,6 +98,11 @@
     display: flex;
   }
 
+  .hamburger-menu a i {
+    text-decoration: none;
+    font-size: 1.9rem;
+  }
+
   .hamburger-cart,
   .burger-menu {
     display: flex;
