@@ -1,0 +1,85 @@
+.grid-container {
+  height: 60rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "one two four" "one two four-low";
+  gap: 1.3rem;
+  margin-top: 1.3rem;
+}
+
+.grid-one {
+  grid-area: one;
+}
+
+.grid-two {
+  grid-area: two;
+}
+
+.grid-four {
+  grid-area: four;
+}
+
+.grid-four-low {
+  grid-area: four-low;
+}
+
+.home-container {
+  padding-top: 12rem;
+}
+
+.featured {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.featured a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.main-description {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  font-size: 3.3rem;
+  font-weight: 600;
+  left: 2rem;
+}
+
+@media all and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    grid-template-areas: "one two" "four four-low";
+    gap: 13px;
+  }
+}
+
+@media (max-width: 512px) {
+  .main-description {
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .main-description {
+    bottom: 1rem;
+    left: 0.5rem;
+    font-size: 2.5rem;
+  }
+}

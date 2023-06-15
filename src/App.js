@@ -11,9 +11,8 @@ function App() {
         <Navigation />
 
         <Routes>
-          <Route index path="/" element={<Home />} />
-
-          <Route path="login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route index path="login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

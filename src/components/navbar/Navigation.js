@@ -31,7 +31,12 @@ const Navigation = () => {
         <div className="container">
           <div className="nav-container">
             <Link to="/">
-              <img src={imgLogo} alt="logo" className="logo-img" />
+              <img
+                src={imgLogo}
+                alt="logo"
+                loading="lazy"
+                className="logo-img"
+              />
             </Link>
 
             <div className="nav-links">
