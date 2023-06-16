@@ -1,0 +1,33 @@
+.proud-h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 3.8rem;
+}
+
+.product-header img {
+  /* width: 100%; */
+  width: 21rem;
+}
+
+.product {
+  position: relative;
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  outline-offset: -2px;
+  cursor: pointer;
+}
+
+.product:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(122, 122, 122, 0.052);
+}
+
+.product-details {
+  font-size: 1.5rem;
+  padding: 1rem;
+  line-height: 20px;
+}
+
+.item-price {
+  font-weight: 600;
+  font-size: 1.7rem;
+}

@@ -1,13 +1,14 @@
 import React from "react";
-import { products } from "../../../../DataSample";
+import { products } from "../../DataSample";
 import { Link } from "react-router-dom";
+import "./product-item.styles.css";
 
-const ProductItem = () => {
+const ProductItem = ({ rowItem }) => {
   const filteredProducts = products.filter((product) => product.id <= 8);
   return (
     <>
       {filteredProducts.map((product) => (
-        <div className="product normal" key={product.id}>
+        <div className={`product normal row-item`} key={product.id}>
           <Link
             to={`/categories/product/${product.id}`}
             onClick={() => window.top(0, 0)}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./proud-product.styles.css";
-import ProductItem from "./ProductItem";
+import ProductItem from "../../../../components/product-item/ProductItem";
 
 const ProudProducts = () => {
   return (
