@@ -25,7 +25,7 @@ const CartItem = ({ cartItems }) => {
       {cartItems.map((item, id) => (
         <div className="cart-item" key={id}>
           <div className="cart-img">
-            <img src={item.img} alt={item.description} />
+            <img src={item.img} loading="lazy" alt={item.description} />
           </div>
 
           <div className="cart-middle">

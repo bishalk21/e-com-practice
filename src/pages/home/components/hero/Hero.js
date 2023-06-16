@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./hero.styles.css";
-import imgFurniture from "../assets/header/home-img-1.jpg";
-import imgSkinCare from "../assets/header/home-img-2.jpg";
-import imgKitchen from "../assets/header/home-img-3.jpg";
-import imgElectronics from "../assets/header/home-img-4.jpg";
+import imgFurniture from "../../assets/header/home-img-1.jpg";
+import imgSkinCare from "../../assets/header/home-img-2.jpg";
+import imgKitchen from "../../assets/header/home-img-3.jpg";
+import imgElectronics from "../../assets/header/home-img-4.jpg";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
             <Link to="categories/furnitures">
               <div id="img1" className="lil-overlay"></div>
               <img src={imgFurniture} loading="lazy" alt="img1" />
-              <p className="main-description">Live Confortably</p>
+              <p className="main-description">Live Comfortably</p>
             </Link>
           </div>
 
