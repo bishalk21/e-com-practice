@@ -34,7 +34,7 @@
 }
 
 .closed-cart {
-  right: -100%;
+  right: -150%;
 }
 
 .cart-body {
@@ -51,7 +51,7 @@
 }
 
 .full-cart-div {
-  height: 70%;
+  height: 60%;
   overflow-y: scroll;
   padding: 5px;
   margin: 1.8rem -0.5rem 0 0;

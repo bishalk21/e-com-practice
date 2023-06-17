@@ -1,0 +1,53 @@
+.news {
+  height: 25rem;
+  padding: 3rem 0;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.news-text {
+  text-align: center;
+}
+
+.news input {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  margin-right: 0.6rem;
+  border: none;
+  outline: none;
+}
+
+.news button {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  border: none;
+}
+
+.news button:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 456px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .news input {
+    margin-right: 0;
+    text-align: center;
+  }
+}
