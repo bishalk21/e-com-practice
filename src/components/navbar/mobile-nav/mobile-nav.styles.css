@@ -12,6 +12,13 @@
   display: flex !important;
 }
 
+nav .logo {
+  position: absolute;
+  top: 33px;
+  left: 55px;
+  cursor: pointer;
+}
+
 .closed-flex {
   display: none !important;
 }

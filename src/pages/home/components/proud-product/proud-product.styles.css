@@ -8,10 +8,6 @@
   margin-bottom: 3.8rem;
 }
 
-.product-header img {
-  width: 100%;
-}
-
 .products-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -57,7 +53,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 476px) {
   .products-grid {
     grid-template-columns: 1fr;
   }

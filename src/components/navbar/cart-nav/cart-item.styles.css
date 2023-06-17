@@ -76,9 +76,12 @@
     width: 90%;
   }
 
+  .cart-img {
+    height: 100%;
+  }
+
   .cart-middle {
     align-items: center;
-    gap: 2rem;
   }
 
   .cart-right {

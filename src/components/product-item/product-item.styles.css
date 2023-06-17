@@ -5,8 +5,8 @@
 }
 
 .product-header img {
-  /* width: 100%; */
-  width: 21rem;
+  width: 100%;
+  min-width: 21rem;
 }
 
 .product {

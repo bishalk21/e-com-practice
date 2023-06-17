@@ -94,13 +94,21 @@
   color: white;
 }
 
-@media all and (max-width) {
+@media all and (max-width: 576px) {
   .cart-div {
     width: 100%;
   }
 }
 
 @media all and (max-width: 420px) {
+  .cart-div {
+    width: 100%;
+  }
+
+  .full-cart-div {
+    height: 70%;
+  }
+
   .full-cart {
     align-items: center;
   }

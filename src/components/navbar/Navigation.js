@@ -9,6 +9,17 @@ import { items as cartItems } from "../../DataSample";
 const Navigation = () => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
   const [cart, setCart] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+  const handleOnScroll = () => {
+    if (window.scrollY > 10) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleOnScroll);
 
   const handleOnClick = () => {
     setMobileNavbar(!mobileNavbar);
@@ -27,10 +38,14 @@ const Navigation = () => {
         cart={cart}
         openCart={openCart}
       />
+      <div
+        onClick={() => openCart()}
+        className={`page-overlay ${cart ? "open-flex" : "closed-flex"}`}
+      ></div>
       <nav className="navbar">
         <div className="container">
-          <div className="nav-container">
-            <Link to="/">
+          <div className={`nav-container ${sticky ? "sticky-nav" : ""}`}>
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
               <img
                 src={imgLogo}
                 alt="logo"
