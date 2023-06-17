@@ -2,11 +2,15 @@ import React from "react";
 import "./banner.styles.css";
 import { Link } from "react-router-dom";
 
-const Banner = ({ title, text, img }) => {
+const Banner = ({ title, text, img, reverse }) => {
   return (
     <div className="banner">
       <div className="container">
-        <div className="banner-container">
+        <div
+          className={`banner-container ${
+            reverse ? "banner-container-reverse" : ""
+          }`}
+        >
           <div className="text-side">
             <div className="text">
               <h2>{title}</h2>

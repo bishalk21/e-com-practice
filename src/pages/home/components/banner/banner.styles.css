@@ -18,6 +18,14 @@
   overflow: hidden;
 }
 
+.banner-container-reverse {
+  display: flex;
+  justify-content: space-between;
+  height: 40rem;
+  overflow: hidden;
+  flex-direction: row-reverse;
+}
+
 .banner {
   padding: 1rem 0;
 }
