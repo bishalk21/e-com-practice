@@ -1,12 +1,15 @@
 import React from "react";
 import "./trending-slide.styles.css";
 import ProductItem from "../../../../components/product-item/ProductItem";
+import { products } from "../../../../DataSample";
 
 const TrendingSlide = () => {
   const slide = (dir) => {
     let slider = document.getElementById("slider");
     slider.scrollLeft += dir * 235;
   };
+
+  const trendingProducts = products.filter((product) => product.id <= 8);
 
   return (
     <div className="trending">
@@ -24,7 +27,9 @@ const TrendingSlide = () => {
         </div>
 
         <div className="row-container" id="slider">
-          <ProductItem />
+          {trendingProducts.map((product) => (
+            <ProductItem {...product} product={product} key={product.id} />
+          ))}
         </div>
       </div>
     </div>

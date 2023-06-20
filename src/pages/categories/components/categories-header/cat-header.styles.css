@@ -1,0 +1,53 @@
+.cat-header {
+  position: relative;
+  padding-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-header,
+.go-to-home > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+
+.go-to-home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.go-to-home h3 {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.go-to-home a {
+  text-align: left;
+}
+
+.cat-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cat-lists a button {
+  padding: 0.6rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-lists a button:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}

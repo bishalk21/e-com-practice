@@ -6,7 +6,6 @@ import Banner from "./components/banner/Banner";
 import banner1 from "./assets/banner/banner1.jpg";
 import banner2 from "./assets/banner/banner2.jpg";
 import TrendingSlide from "./components/trending-slide/TrendingSlide";
-import NewsLetter from "./components/newsletter/NewsLetter";
 
 const Home = () => {
   return (
@@ -25,7 +24,6 @@ const Home = () => {
         text="g-shop products are all made to standard sizes so that you can mix and match them freely."
         img={banner2}
       />
-      <NewsLetter />
     </>
   );
 };

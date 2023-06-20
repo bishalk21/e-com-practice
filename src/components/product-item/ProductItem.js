@@ -1,31 +1,27 @@
 import React from "react";
-import { products } from "../../DataSample";
 import { Link } from "react-router-dom";
 import "./product-item.styles.css";
 
-const ProductItem = ({ rowItem }) => {
-  const filteredProducts = products.filter((product) => product.id <= 8);
+const ProductItem = ({ product }) => {
   return (
     <>
-      {filteredProducts.map((product) => (
-        <div className={`product normal row-item`} key={product.id}>
-          <Link
-            to={`/categories/product/${product.id}`}
-            onClick={() => window.top(0, 0)}
-          >
-            {/* <div className="product-overlay lil-overlay"></div> */}
+      <div className={`product normal row-item`}>
+        <Link
+          to={`/categories/product/${product?.id}`}
+          onClick={() => window.top(0, 0)}
+        >
+          {/* <div className="product-overlay lil-overlay"></div> */}
 
-            <div className="product-header">
-              <img src={product.img} alt="product1" loading="lazy" />
-            </div>
+          <div className="product-header">
+            <img src={product?.img} alt="product1" loading="lazy" />
+          </div>
 
-            <div className="product-details">
-              <p>{product.description}</p>
-              <p className="item-price">AU{product.price}</p>
-            </div>
-          </Link>
-        </div>
-      ))}
+          <div className="product-details">
+            <p>{product?.description}</p>
+            <p className="item-price">AU{product?.price}</p>
+          </div>
+        </Link>
+      </div>
     </>
   );
 };
