@@ -7,6 +7,12 @@ import Footer from "./components/footer/Footer";
 import Categories from "./pages/categories/Categories";
 import AllCategories from "./pages/categories/components/all-categories/AllCategories";
 import NewsLetter from "./components/newsletter/NewsLetter";
+import Furnitures from "./pages/categories/components/furniture/Furnitures";
+import Electronics from "./pages/categories/components/electronics/Electronics";
+import Lamps from "./pages/categories/components/lamps/Lamps";
+import Kitchen from "./pages/categories/components/kitchen/Kitchen";
+import Chairs from "./pages/categories/components/chairs/Chairs";
+import SkinCare from "./pages/categories/components/skin-care/SkinCare";
 
 function App() {
   return (
@@ -21,6 +27,12 @@ function App() {
 
             <Route path="categories" element={<Categories />}>
               <Route path="all" element={<AllCategories />} />
+              <Route path="furnitures" element={<Furnitures />} />
+              <Route path="electronics" element={<Electronics />} />
+              <Route path="lamps" element={<Lamps />} />
+              <Route path="kitchen" element={<Kitchen />} />
+              <Route path="chairs" element={<Chairs />} />
+              <Route path="skin-care" element={<SkinCare />} />
             </Route>
           </Routes>
         </div>
