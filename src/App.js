@@ -13,6 +13,7 @@ import Lamps from "./pages/categories/components/lamps/Lamps";
 import Kitchen from "./pages/categories/components/kitchen/Kitchen";
 import Chairs from "./pages/categories/components/chairs/Chairs";
 import SkinCare from "./pages/categories/components/skin-care/SkinCare";
+import Product from "./pages/product/Product";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
               <Route path="chairs" element={<Chairs />} />
               <Route path="skin-care" element={<SkinCare />} />
             </Route>
+
+            <Route path="categories/product/:id" element={<Product />} />
           </Routes>
         </div>
 

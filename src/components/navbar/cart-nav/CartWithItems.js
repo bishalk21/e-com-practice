@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
 import EmptyCart from "./EmptyCart";
+import { CartContext } from "../../../pages/product/Product";
 
 const CartWithItems = ({ cartItems, setCart }) => {
   const [totalPrice, setTotalPrice] = useState(0);
+  // const { cartItem, setCartItem } = useContext(CartContext);
 
   useEffect(() => {
     const newTotalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
@@ -18,8 +20,8 @@ const CartWithItems = ({ cartItems, setCart }) => {
             cartItems.length !== 0 ? (
               <CartItem
                 key={id}
-                item={item}
                 cartItems={cartItems}
+                item={item}
                 setCart={setCart}
               />
             ) : (

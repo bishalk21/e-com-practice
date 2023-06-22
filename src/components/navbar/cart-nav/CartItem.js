@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./cart-item.styles.css";
+import { CartContext } from "../../../pages/product/Product";
 
 const CartItem = ({ cartItems }) => {
+  // const { cartItem, setCartItem } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
 
   const increaseQty = () => {
@@ -19,6 +21,19 @@ const CartItem = ({ cartItems }) => {
   const calcPrice = (quantity, item) => {
     return quantity * item;
   };
+
+  // const [deleteItem, setDeleteItem] = useState(cartItem);
+
+  // const removeFromCart = (id) => {
+  //   const updateCart = cartItem.filter((item) => item.id !== id);
+  //   setDeleteItem(updateCart);
+  //   const json = JSON.stringify(cartItem.id);
+  //   localStorage.removeItem("cartItem", json);
+  // };
+
+  // useEffect(() => {
+  //   setCartItem(deleteItem);
+  // }, [deleteItem, setCartItem]);
 
   return (
     <>
@@ -39,7 +54,10 @@ const CartItem = ({ cartItems }) => {
 
           <div className="cart-right">
             <p className="cart-price">AU{calcPrice(quantity, item.price)}.99</p>
-            <i className="fa-sharp fa-solid fa-xmark"></i>
+            <i
+              // onClick={() => removeFromCart(item.id)}
+              className="fa-sharp fa-solid fa-xmark"
+            ></i>
           </div>
         </div>
       ))}
